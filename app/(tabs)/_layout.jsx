@@ -3,9 +3,12 @@ import { Tabs } from "expo-router";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
+import Colors from "../../constants/Colors";
 export default function _layout() {
   return (
-    <Tabs screenOptions={{ headerShown: false }}>
+    <Tabs
+      screenOptions={{ headerShown: false, tabBarInactiveTintColor: Colors }}
+    >
       <Tabs.Screen
         name="Home"
         options={{
