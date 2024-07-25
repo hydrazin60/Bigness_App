@@ -1,10 +1,10 @@
-import { View, Text } from "react-native";
 import React from "react";
+import { Stack } from "expo-router";
 
-export default function _layout() {
+export default function _layoutt() {
   return (
-    <View>
-      <Text>_layout</Text>
-    </View>
+    <Stack>
+      <Stack.Screen name="(tabs)" />
+    </Stack>
   );
 }
